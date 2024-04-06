@@ -1,5 +1,8 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/5a42af57ce0462a56e90/maintainability)](https://codeclimate.com/github/nyanyapushkina/python-project-49/maintainability)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nyanyapushkina/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nyanyapushkina/python-project-49/actions)
+<<<<<<< HEAD
 
 ### Maintainbility
 [![Maintainability](https://api.codeclimate.com/v1/badges/5a42af57ce0462a56e90/maintainability)](https://codeclimate.com/github/nyanyapushkina/python-project-49/maintainability) 
@@ -47,3 +50,5 @@ Terminal session recordings of each game
 
 ### brain-prime
 [![asciicast](https://asciinema.org/a/EcK8AdXuOoQgW8FRNEsjMYXtK.svg)](https://asciinema.org/a/EcK8AdXuOoQgW8FRNEsjMYXtK)
+=======
+>>>>>>> 5a4fc9748b9a2be424a01971d7af7aa800e303b4
