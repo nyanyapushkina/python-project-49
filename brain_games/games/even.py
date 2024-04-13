@@ -2,8 +2,10 @@ from random import randint
 
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
+
 def is_even(number):
     return number % 2 == 0
+
 
 def get_data():
     # Generate a random number and create a question
