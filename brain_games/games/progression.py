@@ -22,14 +22,14 @@ def generate_progression():
     return progression
 
 
-def hide_element(line):
+def hide_element(progression):
     # Extract one of the numbers and replace it with '..'
-    hidden_number_index = randint(0, line - 1)
-    hidden_element = line[hidden_number_index]
-    line[hidden_number_index] = '..'
+    hidden_number_index = randint(0, len(progression) - 1)
+    hidden_element = progression[hidden_number_index]
+    progression[hidden_number_index] = '..'
     # Add a whitespace after each element
-    line = ' '.join(line)
-    set = [hidden_element, line]
+    progression = ' '.join(progression)
+    set = [hidden_element, progression]
     return set
 
 
