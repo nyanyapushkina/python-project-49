@@ -4,9 +4,18 @@ version = "0.1.0"
 description = ""
 authors = ["Arina Khokhlova <khokhlova.arina.v@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/nyanyapushkina/python-project-49"
+classifiers = [
+  "Intended Audience :: Education",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Education",
+  "Private :: Do Not Upload",
+]
+
 packages = [
   { include = "brain_games" },
 ]
+
 
 [tool.poetry.dependencies]
 python = "^3.12"
