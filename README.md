@@ -47,5 +47,4 @@ Terminal session recordings of each game
 
 ### brain-prime
 [![asciicast](https://asciinema.org/a/EcK8AdXuOoQgW8FRNEsjMYXtK.svg)](https://asciinema.org/a/EcK8AdXuOoQgW8FRNEsjMYXtK)
-=======
->>>>>>> 5a4fc9748b9a2be424a01971d7af7aa800e303b4
+
