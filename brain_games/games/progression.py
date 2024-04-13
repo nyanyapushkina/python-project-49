@@ -3,14 +3,13 @@ from random import randint
 RULES = 'What number is missing in the progression?'
 
 
-def get_data():
+def generate_progression():
     # Generate the number to start a progression with
     start_number = randint(0, 100)
     # Generate a step for an arithmetic progression
     progression_step = randint(1, 10)
     # Define the length of the progression, i.e the number of elements
     progression_length = randint(5, 10)
-    hidden_number_index = randint(0, progression_length - 1)
 
     progression = []
 
@@ -20,11 +19,24 @@ def get_data():
         progression.append(str(start_number + progression_step * i))
         i += 1
 
+    return progression
+
+
+def hide_element(line):
     # Extract one of the numbers and replace it with '..'
-    correct_answer = progression[hidden_number_index]
-    progression[hidden_number_index] = '..'
+    hidden_number_index = randint(0, line - 1)
+    hidden_element = line[hidden_number_index]
+    line[hidden_number_index] = '..'
     # Add a whitespace after each element
-    progression = ' '.join(progression)
+    line = ' '.join(line)
+    set = [hidden_element, line]
+    return set
+
+
+def get_data():
+    data = hide_element(generate_progression())
+    progression = data[1]
+    correct_answer = data[0]
 
     game_question = f'Question: {progression}'
 

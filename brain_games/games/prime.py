@@ -7,7 +7,7 @@ def is_prime(number):
     d = 2
     while d * d <= number and number % d != 0:
         d += 1
-    return d * d > number
+    return d * d > number and number != 0
 
 
 def get_data():
