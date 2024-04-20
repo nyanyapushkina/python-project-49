@@ -22,9 +22,8 @@ def generate_progression():
     return progression
 
 
-def hide_element(progression):
+def hide_element(progression, hidden_number_index):
     # Extract one of the numbers and replace it with '..'
-    hidden_number_index = randint(0, len(progression) - 1)
     hidden_element = progression[hidden_number_index]
     progression[hidden_number_index] = '..'
     # Add a whitespace after each element
@@ -34,8 +33,10 @@ def hide_element(progression):
 
 
 def get_data():
-    data = hide_element(generate_progression())
-    progression = data[1]
+    progression = generate_progression()
+    hidden_number_index = randint(0, len(progression) - 1)
+    data = hide_element(progression, hidden_number_index)
+
     correct_answer = data[0]
 
     game_question = f'{progression}'
