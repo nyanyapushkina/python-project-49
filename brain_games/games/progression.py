@@ -3,13 +3,7 @@ from random import randint
 RULES = 'What number is missing in the progression?'
 
 
-def generate_progression():
-    # Generate the number to start a progression with
-    start_number = randint(0, 100)
-    # Generate a step for an arithmetic progression
-    progression_step = randint(1, 10)
-    # Define the length of the progression, i.e the number of elements
-    progression_length = randint(5, 10)
+def generate_progression(start_number, progression_step, progression_length):
 
     progression = []
 
@@ -33,7 +27,13 @@ def hide_element(progression, hidden_number_index):
 
 
 def get_data():
-    progression = generate_progression()
+    # Generate the number to start a progression with
+    start = randint(0, 100)
+    # Generate a step for an arithmetic progression
+    step = randint(1, 10)
+    # Define the length of the progression, i.e the number of elements
+    length = randint(5, 10)
+    progression = generate_progression(start, step, length)
     hidden_number_index = randint(0, len(progression) - 1)
     data = hide_element(progression, hidden_number_index)
 
