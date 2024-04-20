@@ -38,6 +38,6 @@ def get_data():
     progression = data[1]
     correct_answer = data[0]
 
-    game_question = f'Question: {progression}'
+    game_question = f'{progression}'
 
     return game_question, str(correct_answer)

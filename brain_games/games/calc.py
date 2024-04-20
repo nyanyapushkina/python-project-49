@@ -11,7 +11,7 @@ def get_data():
     operations_available = ['+', '-', '*']
     operation = choice(operations_available)
 
-    game_question = f'Question: {number_1} {operation} {number_2}'
+    game_question = f'{number_1} {operation} {number_2}'
 
     # Correct answer depends on the chosen operation
     if operation == '+':

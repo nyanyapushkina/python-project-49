@@ -15,7 +15,7 @@ def play(game):
     while round < 3:
         # Get data to ask a question and correct answer
         game_question, correct_answer = game.get_data()
-        print(f'{game_question}')
+        print(f'Question: {game_question}')
         user_answer = prompt.string('Your answer: ')
         # Compare correct answer with the one provided by tthe player
         if user_answer != correct_answer:
