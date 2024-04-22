@@ -18,12 +18,10 @@ def generate_progression(start_number, progression_step, progression_length):
 
 def hide_element(progression, hidden_number_index):
     # Extract one of the numbers and replace it with '..'
-    hidden_element = progression[hidden_number_index]
     progression[hidden_number_index] = '..'
     # Add a whitespace after each element
-    progression = ' '.join(progression)
-    set = [hidden_element, progression]
-    return set
+    progression = ' '.join(map(str, progression))
+    return progression
 
 
 def get_data():
@@ -35,10 +33,8 @@ def get_data():
     length = randint(5, 10)
     progression = generate_progression(start, step, length)
     hidden_number_index = randint(0, len(progression) - 1)
-    data = hide_element(progression, hidden_number_index)
 
-    correct_answer = data[0]
-
-    game_question = f'{progression}'
+    correct_answer = progression[hidden_number_index]
+    game_question = hide_element(progression, hidden_number_index)
 
     return game_question, str(correct_answer)
