@@ -1,5 +1,7 @@
 import prompt
 
+MAX_ROUND = 3
+
 
 def play(game):
     # Greet a player
@@ -12,7 +14,7 @@ def play(game):
 
     round = 0
 
-    while round < 3:
+    while round < MAX_ROUND:
         # Get data to ask a question and correct answer
         game_question, correct_answer = game.get_data()
         print(f'Question: {game_question}')
